@@ -6,11 +6,11 @@
 #include <cstdio>
 
 typedef struct Node_ {
-    int used;
-    int count_pointer;
-    char ch[2];
-    int left;
-    int right;
+    int used;           // used for flag the node is exist
+    int count_pointer;  // used for find the root of the tree
+    char ch[2];         // node content
+    int left;           // left subtree index
+    int right;          // right subtree index
 } Node;
 
 Node data[1001];
